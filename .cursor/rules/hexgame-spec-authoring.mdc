@@ -1,0 +1,13 @@
+---
+description: Authoring and editing HexGame normative and informative markdown specifications
+globs: spec/**/*.md,CONTRIBUTING.md
+alwaysApply: false
+---
+
+# Spec authoring
+
+- **Normative** language belongs in `spec/hexgame-architecture.md` only. Use BCP 14 keywords in ALL CAPS for requirements (**MUST**, **MUST NOT**, **SHOULD**, **MAY**).
+- **Informative** content lives in `spec/informative-overview.md`. It must not contradict the normative doc; if it does, fix or remove the overview sentence.
+- When you change heading text or add sections in the normative spec, update the **Table of Contents** at the top of that file so anchors stay accurate.
+- Substantive edits: add a bullet under `[Unreleased]` in `CHANGELOG.md` (see `CONTRIBUTING.md`).
+- Do not invent IETF RFC numbers for project patterns; use the **Informative References** section style already in the normative spec.
