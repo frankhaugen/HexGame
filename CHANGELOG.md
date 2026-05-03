@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Added
 
 - .NET reference implementation under [implementations/dotnet/](implementations/dotnet/) (`HexGame.Abstractions`, `HexGame.Hosting`, `HexGame.Testing` NuGet packages v0.1.0) with smoke tests and [docs/reference-implementations/dotnet.md](docs/reference-implementations/dotnet.md).
+- GitHub Actions workflow [.github/workflows/dotnet-packages.yml](.github/workflows/dotnet-packages.yml) to publish those packages to **GitHub Packages** (manual `workflow_dispatch` with version input, or on **Release published** from tag `v*`). Consumer notes in [docs/reference-implementations/dotnet.md](docs/reference-implementations/dotnet.md).
 
 ### Removed
 

@@ -1,0 +1,78 @@
+name: Publish .NET packages (GitHub Packages)
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "SemVer to publish (e.g. 0.1.1). Overrides Directory.Build.props for this run."
+        required: true
+        default: "0.1.0"
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  packages: write
+
+concurrency:
+  group: dotnet-packages-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: implementations/dotnet
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Resolve version
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "release" ]; then
+            ver="${{ github.event.release.tag_name }}"
+            ver="${ver#v}"
+          else
+            ver="${{ github.event.inputs.version }}"
+          fi
+          if [ -z "${ver}" ]; then
+            echo "Resolved version is empty" >&2
+            exit 1
+          fi
+          echo "Publishing NuGet version: ${ver}"
+          echo "value=${ver}" >> "${GITHUB_OUTPUT}"
+
+      - name: Restore
+        run: dotnet restore HexGame.sln
+
+      - name: Build
+        run: dotnet build HexGame.sln -c Release --no-restore
+
+      - name: Test
+        run: dotnet test HexGame.sln -c Release --no-build
+
+      - name: Pack
+        run: dotnet pack HexGame.sln -c Release --no-build -o ./artifacts -p:Version=${{ steps.version.outputs.value }}
+
+      - name: Push to GitHub Packages
+        shell: bash
+        run: |
+          set -euo pipefail
+          owner="${{ github.repository_owner }}"
+          src="https://nuget.pkg.github.com/${owner}/index.json"
+          for pkg in ./artifacts/*.nupkg; do
+            echo "Pushing ${pkg}"
+            dotnet nuget push "${pkg}" --source "${src}" --api-key "${NUGET_TOKEN}" --skip-duplicate
+          done
+        env:
+          NUGET_TOKEN: ${{ secrets.GITHUB_TOKEN }}

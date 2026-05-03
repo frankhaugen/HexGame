@@ -17,7 +17,7 @@ HexGame is a **hexagonal, authoritative-core architecture** for games: commands 
 Optional libraries that mirror HexGame seams in specific ecosystems. The **spec remains canonical**; these are aids, not replacements.
 
 - [implementations/README.md](implementations/README.md) — index of implementations.
-- [.NET / NuGet](docs/reference-implementations/dotnet.md) — `HexGame.Abstractions`, `HexGame.Hosting`, `HexGame.Testing` (v0.1).
+- [.NET / NuGet](docs/reference-implementations/dotnet.md) — `HexGame.Abstractions`, `HexGame.Hosting`, `HexGame.Testing` (v0.1); publish to GitHub Packages via [.github/workflows/dotnet-packages.yml](.github/workflows/dotnet-packages.yml).
 
 ## Community and governance
 
