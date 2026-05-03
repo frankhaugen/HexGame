@@ -1,2 +1,8 @@
 # Cursor local plan exports (not part of the specification)
 .cursor/plans/
+
+# .NET build output
+**/bin/
+**/obj/
+**/*.user
+**/*.suo

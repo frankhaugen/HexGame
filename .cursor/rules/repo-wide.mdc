@@ -6,6 +6,7 @@ alwaysApply: true
 # HexGame repository
 
 - The **normative** specification is `spec/hexgame-architecture.md`. The informative narrative is `spec/informative-overview.md`.
+- Optional **.NET** reference packages live under `implementations/dotnet/`; other language implementations may be added as peers.
 - Avoid drive-by edits outside the files needed for the user’s task. Do not “clean up” unrelated prose or tooling.
 - Governance: `CONTRIBUTING.md`, `CHANGELOG.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, `LEGAL.md`.
 - For agent-oriented detail, read `AGENTS.md`.

@@ -6,6 +6,7 @@ This repository is a **specification** workspace for the HexGame game architectu
 
 - **Normative:** [spec/hexgame-architecture.md](spec/hexgame-architecture.md). This file defines requirements using BCP 14 keywords.
 - **Informative:** [spec/informative-overview.md](spec/informative-overview.md) and [spec/README.md](spec/README.md).
+- **Reference code:** [.NET packages](implementations/dotnet/) live under [implementations/](implementations/); they are **not** the only possible expression of the architecture.
 
 ## When editing
 

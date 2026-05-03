@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>HexGame</RootNamespace>
+    <AssemblyName>HexGame.Abstractions</AssemblyName>
+    <Description>Contracts for engine-agnostic, authoritative-core games (commands, ticks, frame output, adapter ports).</Description>
+    <PackageId>HexGame.Abstractions</PackageId>
+    <PackageTags>hexgame;game-architecture;ports-and-adapters</PackageTags>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>HexGame.Testing</RootNamespace>
+    <AssemblyName>HexGame.Testing</AssemblyName>
+    <Description>In-memory adapters and scenario runner for testing HexGame-style applications without a real engine or network.</Description>
+    <PackageId>HexGame.Testing</PackageId>
+    <PackageTags>hexgame;game-architecture;testing</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HexGame.Abstractions\HexGame.Abstractions.csproj" />
+  </ItemGroup>
+</Project>

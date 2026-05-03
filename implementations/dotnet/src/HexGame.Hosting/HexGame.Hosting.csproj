@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>HexGame.Hosting</RootNamespace>
+    <AssemblyName>HexGame.Hosting</AssemblyName>
+    <Description>Fixed-tick loop and local in-process host helpers for HexGame-style applications.</Description>
+    <PackageId>HexGame.Hosting</PackageId>
+    <PackageTags>hexgame;game-architecture;hosting</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HexGame.Abstractions\HexGame.Abstractions.csproj" />
+  </ItemGroup>
+</Project>

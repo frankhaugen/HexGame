@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Added
+
+- .NET reference implementation under [implementations/dotnet/](implementations/dotnet/) (`HexGame.Abstractions`, `HexGame.Hosting`, `HexGame.Testing` NuGet packages v0.1.0) with smoke tests and [docs/reference-implementations/dotnet.md](docs/reference-implementations/dotnet.md).
+
 ### Removed
 
 - Root `concept.md` and `rough-draft.md` (use `spec/informative-overview.md` and `spec/hexgame-architecture.md` instead).

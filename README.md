@@ -12,6 +12,13 @@ HexGame is a **hexagonal, authoritative-core architecture** for games: commands 
 | [spec/informative-overview.md](spec/informative-overview.md) | **Informative** narrative overview (same spirit, not binding). |
 | [spec/README.md](spec/README.md) | How this folder is organized. |
 
+## Reference implementations
+
+Optional libraries that mirror HexGame seams in specific ecosystems. The **spec remains canonical**; these are aids, not replacements.
+
+- [implementations/README.md](implementations/README.md) — index of implementations.
+- [.NET / NuGet](docs/reference-implementations/dotnet.md) — `HexGame.Abstractions`, `HexGame.Hosting`, `HexGame.Testing` (v0.1).
+
 ## Community and governance
 
 - [CONTRIBUTING.md](CONTRIBUTING.md) — pull requests, changelog, DCO sign-off.
