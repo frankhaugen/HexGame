@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Removed
+
+- Root `concept.md` and `rough-draft.md` (use `spec/informative-overview.md` and `spec/hexgame-architecture.md` instead).
+
 ## [0.1.0] - 2026-05-03
 
 ### Added
@@ -19,4 +23,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Changed
 
 - [README.md](README.md) expanded into a proper project portal.
-- Root [rough-draft.md](rough-draft.md) and [concept.md](concept.md) replaced with short stubs pointing at `spec/` so existing links keep working.
+- Root `rough-draft.md` and `concept.md` replaced with short stubs pointing at `spec/` (stubs removed in a later change; use `spec/` paths directly).

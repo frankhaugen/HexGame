@@ -12,8 +12,6 @@ HexGame is a **hexagonal, authoritative-core architecture** for games: commands 
 | [spec/informative-overview.md](spec/informative-overview.md) | **Informative** narrative overview (same spirit, not binding). |
 | [spec/README.md](spec/README.md) | How this folder is organized. |
 
-Legacy paths [rough-draft.md](rough-draft.md) and [concept.md](concept.md) redirect to the spec directory.
-
 ## Community and governance
 
 - [CONTRIBUTING.md](CONTRIBUTING.md) — pull requests, changelog, DCO sign-off.

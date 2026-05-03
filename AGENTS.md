@@ -6,7 +6,6 @@ This repository is a **specification** workspace for the HexGame game architectu
 
 - **Normative:** [spec/hexgame-architecture.md](spec/hexgame-architecture.md). This file defines requirements using BCP 14 keywords.
 - **Informative:** [spec/informative-overview.md](spec/informative-overview.md) and [spec/README.md](spec/README.md).
-- **Not normative:** Root [concept.md](concept.md) and [rough-draft.md](rough-draft.md) are stubs that only point into `spec/`. Do not treat them as sources of truth.
 
 ## When editing
 

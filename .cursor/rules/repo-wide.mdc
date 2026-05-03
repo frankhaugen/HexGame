@@ -6,7 +6,6 @@ alwaysApply: true
 # HexGame repository
 
 - The **normative** specification is `spec/hexgame-architecture.md`. The informative narrative is `spec/informative-overview.md`.
-- Root `concept.md` and `rough-draft.md` are redirect stubs only.
 - Avoid drive-by edits outside the files needed for the user’s task. Do not “clean up” unrelated prose or tooling.
 - Governance: `CONTRIBUTING.md`, `CHANGELOG.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, `LEGAL.md`.
 - For agent-oriented detail, read `AGENTS.md`.

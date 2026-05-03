@@ -14,7 +14,6 @@ Thank you for helping improve the HexGame architecture specification. This repos
 | --- | --- |
 | [spec/hexgame-architecture.md](spec/hexgame-architecture.md) | **Normative.** Uses BCP 14 keywords (**MUST**, **SHOULD**, **MAY**). |
 | [spec/informative-overview.md](spec/informative-overview.md) | **Informative** narrative only. |
-| Root stubs [concept.md](concept.md) and [rough-draft.md](rough-draft.md) | Pointers only; do not extend as alternate specs. |
 
 If a change would make the overview and the normative spec disagree, update the normative spec (or drop the conflicting sentence from the overview).
 

@@ -17,4 +17,4 @@ When invoked:
 5. Keep diffs minimal; do not rewrite unrelated sections.
 6. Remind the user to update `CHANGELOG.md` under `[Unreleased]` for substantive edits.
 
-Never treat `concept.md`, `rough-draft.md`, or the informative overview as overriding the normative spec.
+Never treat the informative overview as overriding the normative spec.
